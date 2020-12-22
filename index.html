@@ -1,0 +1,28 @@
+<html>
+    <head></head>
+
+    <body>
+        <div style="max-width: 1200px; max-height: 1000px;">
+            <canvas id="myChart"></canvas>
+        </div>
+        
+        <select id="type">
+            <option selected value="1">Cинусоидальный импульс</option>
+            <option value="2">Импульс прямоугольной формы</option>
+            <option value="3">Треугольный импульс</option>
+        </select>
+
+        <select id="kurant">
+            <option value="0.0014">0.1</option>
+            <option selected value="0.0065">0.5</option>
+            <option value="0.0130">0.99</option>
+        </select>
+
+        <input id="slider" type="range" min="1" max="300" value="1" />
+    </body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="js/lodash.js"></script>
+    <script src="js/index.js"></script>
+       
+</html>
